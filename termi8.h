@@ -98,7 +98,7 @@
 	};
 
 	int prepare();
-	int setMemoryPointer(void* memPointer);
+	int setMemoryPointer(unsigned char* memPointer);
 	int execInstruction();
 	int interruptCpu(int interruptChannel); //high level function that sets the hardware registers and then calls triggerInterrupt
 	int triggerInterrupt(bool maskable); //low level function that calls cpu.cpp
